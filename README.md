@@ -8,4 +8,4 @@ The control plane/etcd node is sized to t3a.medium and worker node is t3a.large
 ## How to Use
 
 * Go to the Apps Marketplace in the `local` cluster in Rancher
-* Add a new Chart Repository to the HTTP(S) URL `https://firefhtr.github.io/rancher-cluster-templates` without authentication
+* Add a new Chart Repository to the HTTP(S) URL 'https://github.com/firefhtr/rke2-template.git'
