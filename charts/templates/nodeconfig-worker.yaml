@@ -1,0 +1,12 @@
+{{- $clustername := .Values.cluster.name }}
+apiVersion: rke-machine-config.cattle.io/v1
+kind: Amazonec2Config
+metadata:
+  name: {{ $clustername }}-worker
+  namespace: fleet-default
+instanceType: t3a.large
+region: us-east-1
+subnetId: subnet-0ca88ddeac512e1a9
+vpcId: vpc-02fd40e452d1033b4
+zone: b
+sshUser: ec2_user
