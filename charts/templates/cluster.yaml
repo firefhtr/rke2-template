@@ -16,7 +16,7 @@ spec:
   {{- if .Values.cloudCredentialSecretName }}
   cloudCredentialSecretName: {{ .Values.cloudCredentialSecretName }}
   {{- end }}
-  kubernetesVersion: v1.22.6+rke2r1
+  kubernetesVersion: v1.23.17+rke2r1
   rkeConfig:
     machineSelectorConfig:
     machinePools:
