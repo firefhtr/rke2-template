@@ -18,6 +18,7 @@ spec:
   {{- end }}
   kubernetesVersion: v1.22.6+rke2r1
   rkeConfig:
+    machineSelectorConfig:
     machinePools:
     - controlPlaneRole: true
       etcdRole: true
