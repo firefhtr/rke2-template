@@ -18,13 +18,13 @@ questions:
     - t3.meduim
     - t3.large
     - t3.xlarge
-  group: "MachinePools"
+  group: "cpmachinepool"
 - variable: cpmachinepool.count
   description: "Control Plane Node number of devices"
   label: "Control Plane Node number of devices"
   type: int
   required: true
-  group: "MachinePools"
+  group: "wrkmachinepool"
   - variable: wrkmachinepool.size
   description: "Worker Node VM size"
   label: "Worker Node VM size"
