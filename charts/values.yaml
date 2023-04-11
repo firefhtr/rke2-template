@@ -12,3 +12,8 @@ cluster:
 # specify cloud credential secret name, do not need to be provided if using custom driver
 cloudCredentialSecretName: ""
 
+# Specific AMI
+ami: ami-016e32e9cd1b095f4
+
+# Keypair
+keypairName: ""

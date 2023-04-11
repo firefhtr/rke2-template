@@ -29,10 +29,10 @@ spec:
         name: {{ $clustername }}-controlplane
       paused: false
       displayName: {{ $clustername }}-controlplane
-      ami: ami-016e32e9cd1b095f4
-      keypairName: ant-aws-internal
-    - controlPlaneRole: false
+      ami: {{ .Values.ami }} 
+      keypairName: {{ .Values.keypairName }}
       etcdRole: false
+    - controlPlaneRole: false
       workerRole: true
       quantity: 1
       name: {{ $clustername }}-worker
@@ -41,7 +41,7 @@ spec:
         name: {{ $clustername }}-worker
       paused: false
       displayName: {{ $clustername }}-worker
-      ami: ami-016e32e9cd1b095f4
-      keypairName: ant-aws-internal
+      ami: {{ .Values.ami }} 
+      keypairName: {{ .Values.keypairName }}
     machineGlobalConfig:
       cni: calico
