@@ -10,5 +10,4 @@ subnetId: subnet-0ca88ddeac512e1a9
 vpcId: vpc-02fd40e452d1033b4
 zone: b
 sshUser: ec2_user
-ami: ami-016e32e9cd1b095f4
-keypairName: ant-aws-internal
+ami: "ami-016e32e9cd1b095f4"
