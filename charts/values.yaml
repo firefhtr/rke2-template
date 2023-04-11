@@ -11,3 +11,11 @@ cluster:
 
 # specify cloud credential secret name, do not need to be provided if using custom driver
 cloudCredentialSecretName: ""
+
+cpmachinepool:
+  size: t3.large
+  count: 1
+
+wrkmachinepool:
+  size: t3.large
+  count: 1
