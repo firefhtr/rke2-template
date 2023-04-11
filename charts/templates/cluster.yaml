@@ -23,7 +23,7 @@ spec:
     - controlPlaneRole: true
       etcdRole: true
       workerRole: false
-      quantity: 1
+      quantity: {{ .Values.cpmachinepool.count }}
       name: {{ $clustername }}-controlplane
       machineConfigRef:
         kind: Amazonec2Config
@@ -33,7 +33,7 @@ spec:
     - controlPlaneRole: false
       etcdRole: false
       workerRole: true
-      quantity: 1
+      quantity: {{ .Values.wrkmachinepool.count }}
       name: {{ $clustername }}-worker
       machineConfigRef:
         kind: Amazonec2Config
