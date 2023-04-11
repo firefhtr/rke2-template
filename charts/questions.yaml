@@ -10,9 +10,3 @@ questions:
   label: "CloudCredential Name"
   type: cloudcredential
   group: "General"
-- variable: keypairName
-  description: "Select key pair to use"
-  label: "Key Pair"
-  required: true
-  type: keypairName
-  group "General"

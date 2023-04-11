@@ -29,10 +29,8 @@ spec:
         name: {{ $clustername }}-controlplane
       paused: false
       displayName: {{ $clustername }}-controlplane
-      ami: {{ .Values.ami }} 
-      keypairName: {{ .Values.keypairName }}
-      etcdRole: false
     - controlPlaneRole: false
+      etcdRole: false
       workerRole: true
       quantity: 1
       name: {{ $clustername }}-worker
@@ -41,7 +39,5 @@ spec:
         name: {{ $clustername }}-worker
       paused: false
       displayName: {{ $clustername }}-worker
-      ami: {{ .Values.ami }} 
-      keypairName: {{ .Values.keypairName }}
     machineGlobalConfig:
       cni: calico
